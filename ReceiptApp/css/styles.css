@@ -1,0 +1,314 @@
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin:0; 
+      border: none;
+      background: linear-gradient(to right, #f5f5f0, #ebebe0);
+      color: black !important;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+    
+    .navbar-nav {
+      margin: 0px -15px !important;
+    }
+
+    .navbar-inverse .navbar-toggle .icon-bar{
+      background-color: lightgrey;
+    }
+
+    .navbar-inverse .navbar-nav>.active>a {
+      background: none !important;
+      color: darkslategrey;
+    }
+    
+    .navbar-inverse .navbar-toggle{
+      border: 1px solid silver;
+      box-shadow: 1px 1px 1px silver;
+    }
+
+    #tblHeader{
+      padding-top: 12px;
+      font-family: serif;
+      font-size: 20px;
+      text-shadow: 1px 1px grey;
+      color: lightgrey;
+      background-color: #2d5986;
+      height: 50px;
+    }
+
+    .navbar-nav>li>a{
+      color: black;
+      font-size: 18px;
+      font-family: serif;
+      margin-right: 12px;      
+      cursor: pointer;
+    }
+
+    .navbar-nav>li>a:hover{
+      color: #a3a375 !important;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background: #2d5986;
+      color: white;
+      padding: 15px;
+    }
+
+    .totPrice{display: inline-block !important; width: 90% !important; text-align: right;}
+    .footerCell{ width: 70% !important; display: inline-block !important; }
+
+    table#receiptGrid{
+      margin: auto;
+      margin-top: 10px;
+      position: relative;
+      width: 100%; font-family: serif;
+    }
+       
+    #receiptGrid tr {box-shadow: 1px 1px 1px silver; background-color: white; border: 1px solid lightgrey}
+    #receiptGrid img { cursor: pointer; }
+
+     #itemGrid{ width: 100%; }
+     #itemGrid th{background-color: #264d73; padding: 0px 40px; color:lightgrey;}
+     #itemGrid td input{padding: 0px 40px}
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 920px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+
+    
+     #receiptGrid tr.reportView td.gridCell, th.gridCell{
+      padding: 5px 15px; 
+      }  
+
+      #receiptGrid, #receiptGridView {
+        width: 100%;
+      }    
+      .logo{ display: none; }
+    }
+
+     @media screen and (min-width: 920px) {
+      #myNavbar {
+        float: right;
+        margin-right: 170px;
+      }
+      
+     #receiptGrid tr.receiptView td.gridCell, th.gridCell{
+        padding: 15px 20px; font-size: 18px;
+      } 
+      #receiptGridView {
+        width: 80%;
+      }
+
+      .createForm{ width: 760px; }
+    }
+
+
+.form-style-8{
+    font-family: 'Open Sans Condensed', arial, sans;   
+    background: #FFFFFF;
+    margin:auto;
+    border: 1px solid silver;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.form-style-8 h2{
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: lightgrey;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 12px; 
+    margin-top: 0px;
+}
+
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 textarea,
+.form-style-8 select 
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+.form-style-8 textarea{
+    resize:none;
+    overflow: hidden;
+}
+.form-style-8 input.btnTxt{
+    -moz-box-shadow: inset 0px 1px 0px 0px #003366;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #003366;
+    box-shadow: inset 0px 1px 0px 0px #003366;
+    background-color: #004080;
+    border: 1px solid #003366;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: serif;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.form-style-8 input.btnTxt:hover {
+    background-color:#336699;
+}
+
+.addItemBtn{padding: 7px; background-color: #adad85; margin: -18px 0px 0px 0px; width: 120px; cursor: pointer;}
+.addItemBtn:hover{ background-color: #c2c2a3;}
+
+// css styles for datepicker
+.ui-datepicker {
+    width: 50px;
+    height: 50px;
+    font: 12pt Arial, sans-serif;   
+}
+
+#ui-datepicker-div{
+  position: absolute;
+  top: 0px !important;
+}
+.ui-datepicker table {
+    width: 100%;
+}
+
+.ui-datepicker-header {
+    background: #3399ff;
+    color: #ffffff;
+    font-family:'Times New Roman';
+    border-width: 1px 0 0 0;
+    margin-top: 194px;
+    border-style: solid;
+    border-color: #111;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.ui-datepicker-prev {
+    float: left;
+    cursor: pointer;
+    background-position: center -30px;
+}
+
+.ui-datepicker-next {
+    float: right;
+    cursor: pointer;
+    background-position: center 0px;
+}
+
+.ui-datepicker thead {
+    background-color: #f7f7f7;
+
+    /*border-bottom: 1px solid #bbb;*/
+}
+
+.ui-datepicker th {
+    background-color:#808080;
+    text-transform: uppercase;
+    font-size: 8pt;
+    color: #666666;
+    /*text-shadow: 1px 0px 0px #fff;*/
+    /*filter: dropshadow(color=#fff, offx=1, offy=0);*/
+}
+
+.ui-datepicker tbody td {
+    padding: 0px !important;
+    /*border-right: 1px solid #808080;*/
+}
+
+    .ui-datepicker tbody td:last-child {
+        border-right: 0px;
+    }
+
+.ui-datepicker tbody tr {
+    border-bottom: 1px solid #bbb;
+}
+
+    .ui-datepicker tbody tr:last-child {
+        border-bottom: 0px;
+    }
+
+.ui-datepicker a {
+    text-decoration: none;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    display: inline-block;
+    /*font-weight: bold;*/
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    /*text-shadow: 1px 1px 0px #fff;*/
+    /*filter: dropshadow(color=#fff, offx=1, offy=1);*/
+}
+
+.ui-datepicker-calendar .ui-state-default {
+      background: linear-gradient(#999999, #737373);
+      color:#ffffff;
+      height:40px;
+      width:40px;
+
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+    background: #33adff;
+    color: #FFFFFF;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    background: #33adff;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    color: #e0e0e0;
+    text-shadow: 0px 1px 0px #4d7a85;
+    border: 1px solid #55838f;
+    position: relative;
+    margin: -1px;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+    background: #D6E4BE;
+    color: #000;
+}
